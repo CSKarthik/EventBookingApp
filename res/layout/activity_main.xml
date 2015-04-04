@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3b3b3b" >
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip" 
+        android:id="@+id/linear1">
+        <!--  View Title Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="@string/login"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <!--  Email Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email" />
+        <!--  Email TextField -->
+        <EditText
+            android:id="@+id/loginEmail"
+            android:inputType="textEmailAddress"
+            android:layout_width="fill_parent"
+            android:hint="@string/email"
+            android:layout_height="wrap_content" />
+ 
+        <!--  Password Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="@string/password" />
+        <!--  Password TextField -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/passwordHint"
+            android:inputType="textPassword" />
+ 
+        <!--  Error message -->
+        <TextView android:id="@+id/login_error"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="true"
+                    android:textColor="#e30000"
+                    android:padding="10dip"
+                    android:textStyle="bold"/>
+ 
+        <!--  Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="@string/login" />
+ 
+        <!--  Link to Registration Screen -->
+        <Button
+            android:id="@+id/btnLinkToRegisterScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="@string/Register"
+            android:textColor="#21dbd4"
+            android:textStyle="bold" />
+    </LinearLayout>
+ 
+</ScrollView>
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:padding="10dip" 
+        android:id="@+id/linear2">
+        <!--  View Title Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="@string/IP"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        
+        <EditText
+            android:id="@+id/ip"
+            android:layout_width="fill_parent"
+            android:hint="@string/IPHint"
+            android:layout_height="wrap_content" />
+        
+        <Button
+            android:id="@+id/ipbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:onClick="ipReset"
+            android:text="@string/OK" />
+        
+        </LinearLayout>
+
+</RelativeLayout>

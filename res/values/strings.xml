@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Desk</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login">LOGIN</string>
+    <string name="password">Password</string>
+    <string name="passwordHint">Enter Password!</string>
+    <string name="email">Email Address</string>
+    <string name="EName">Enter Event Name</string>
+    <string name="EHint">Event Name</string>
+    <string name="Create">Create</string>
+    <string name="ibDesc">123</string>
+    <string name="Sample">Sample</string>
+    <string name="IP">IP Address</string>
+    <string name="Register" >I don\&apos;t have account. Register Me!</string>
+    <string name = "IPHint">Enter Server IP Address!</string>
+    <string name="OK">OK</string>
+    <string name="Participants">Participants</string>
+    <string name="NAME">NAME</string>
+    <string name="USN">USN</string>
+    <string name="MOB">MOB</string>
+    <string name="EMAIL_ADDR">EMAIL_ADDR</string>
+    <string name="AEvent">Add Event</string>
+    <string name="SEvents">Show Events</string>
+</resources>
